@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div id="main-container" class="px-8 py-2">
+        <div class="absolute inset-0 w-full h-full bg-gradient-to-t from-blue-400 via-blue-300 to-fuchsia-300  -z-10 clip-path"></div>
+
+        <div class="relative ">
+            <div class="nav-container">
+                <nav class="navbar flex items-center justify-between m-3">
+                    <div class="logo-container flex items-center mt-2">
+                        <div class="logo h-14 border w-7 rounded-xl flex items-center justify-center">
+                            <i class="fa-regular fa-gem text-white align-middle justify-center mt-2 mx-1"></i>
+                        </div>
+                        <h4 class="m-3 text-white font-sans">Pop Rock Crystal</h4>
+                    </div>
+                    <ul class="flex space-x-8 text-white cursor-pointer">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About Us</li>
+                        <li>Help</li>
+                    </ul>
+                    <div class="icon justify-end">
+                        <span class="bg-red-600 rounded-full h-4 w-4 absolute top-6 px-0.5 right-12 text-xs text-white ">00</span>
+                        <i class="fa-solid fa-sailboat text-white"></i>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Main Section -->
+            <div id="home-secton" class="home-container px-5 flex flex-col md:flex-row justify-between items-center relative py-8">
+                <!-- Left Side (Text) -->
+                <div class="left-part text-white max-w-lg mx-10 md:mb-0 z-20">
+                    <h3 class="font-semibold text-3xl">Welcome to</h3><br>
+                    <h4 class="text-5xl font-semibold">Pop Rock Crystal Shop!</h4>
+                    <p class="mt-4 text-balance text-blue-950">
+                        Here you will find unique phone accessories, crystals, jewelry and more. Free shipping inside the U.S. and our phone grips come with a limited warranty. Enjoy!
+                    </p>
+                    <div class="btn-container mt-8">
+                        <button class="shop-btn bg-white font-serif text-blue-400 py-3 px-7 rounded-2xl hover:shadow-2xl text-sm mr-2">SHOP NOW</button>
+                        <button class="about-btn hover:shadow-xl bg-transparent text-blue-950 font-serif  hover:bg-white hover:text-blue-400 py-3 px-7 rounded-2xl transition-all duration-200 ease-in-out">
+                            about us
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Right Side (Image) -->
+                <div class="right-part text-center bg-white shadow-lg absolute top-10 right-[70px] rounded-3xl z-10  h-96 w-96">
+                    <div class="text-white  bg-sky-500 rounded px-1  w-16 font-semi-bold text-sm py-1 mt-14 ">New lot</div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="Crystal Agate Phone Grip" class="mx-auto bg-transparent cursor-pointer">
+                        <h4 class="text-gray-500 mt-5 font-serif">CRYSTAL AGATE PHONE GRIP - <span class="text-blue-800">18.99$</span></h4>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Slider Dots (Optional Section) -->
+        
+            <div class="slider-dots mt-36 flex justify-end space-x-2 mx-40">
+                <div class="icon bg-blue-400 rounded-lg mx-2 text-white"><i class="fa-solid fa-arrow-left mx-2"></i></div>
+                <span class="dot w-2 h-2 bg-blue-500 rounded-full cursor-pointer active"></span>
+                <span class="dot w-2 h-2 bg-gray-500 rounded-full cursor-pointer"></span>
+                <span class="dot w-2 h-2 bg-gray-500 rounded-full cursor-pointer"></span>
+                <span class="dot w-2 h-2 bg-gray-500 rounded-full cursor-pointer"></span>
+                <span class="dot w-2 h-2 bg-gray-500 rounded-full cursor-pointer"></span>
+                <span class="dot w-2 h-2 bg-gray-500 rounded-full cursor-pointer"></span>
+            <div class="icon bg-blue-400 rounded-lg mx-2 text-white"><i class="fa-solid fa-arrow-right mx-2"></i></div>
+            </div>
+            
+        
+            <!-- Scroll Button -->
+            <div class="mt-4 grid place-items-center">
+                <button class="scroll-btn bg-transparent text-blue-900 font-semibold justify-center py-2 px-4 rounded">
+                    <i class="fa-solid fa-computer-mouse"></i> Scroll down
+                </button>
+            </div>
+        </div>
+        
+        <div id="shop-section" class="product-container mt-8 mx-5">
+            <h1  class="text-4xl justify-center text-center text-blue-950 mb-7 font-bold">ALL PRODUCTS</h1>
+            <div class="drop-downs  flex my-4 ">
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button type="button" class="flex items-center border-none justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                            <span class="flex items-center font-semibold">
+                                <span class="text-gray-500">Filter:</span>&nbsp;All Products
+                            </span>
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06 0L10 10.44l3.71-3.23a.75.75 0 111 1.14l-4.25 3.59a.75.75 0 01-1 0l-4.25-3.59a.75.75 0 010-1.14z" clip-rule="evenodd" />
+                            </svg>
+                        </button> 
+                    </div>
+                </div>
+                <div class="relative inline-block text-left"></div>
+                    <div>
+                        <button type="button" class="flex items-center border-none justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                            <span class="flex items-center font-semibold">
+                                <span class="text-gray-500">Sort:</span>&nbsp;Best Selling
+                            </span>
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06 0L10 10.44l3.71-3.23a.75.75 0 111 1.14l-4.25 3.59a.75.75 0 01-1 0l-4.25-3.59a.75.75 0 010-1.14z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+               
+            </div>
+            <div class="cards-container">
+                <div class="sub-cards1 grid lg:grid-cols-4 gap-8 md:grid-cols-2 sm:grid-cols-1 font-serif text-center mx-12">
+                    <div class="card1 hover:shadow-2xl p-4 border rounded justify-center items-center text-center shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40  object-cover mx-12">
+                        <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                        <P class="text-lg text-blue-600">18.99$</P>
+                        <button class="buy-btn bg-transparent  text-blue-500 w-28 border mx-20 border-blue-500 py-2  rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                    </div>
+                    <div class="card1 hover:shadow-2xl p-4 border rounded shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                        <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                        <P class="text-lg text-blue-600">18.99$</P>
+                        <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                    </div>
+                    <div class="card1 hover:shadow-2xl p-4 border rounded shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                        <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                        <P class="text-lg text-blue-600">18.99$</P>
+                        <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                    </div>
+                    <div class="card1 hover:shadow-2xl p-4 border rounded shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                        <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                        <P class="text-lg text-blue-600">18.99$</P>
+                        <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                    </div>
+
+      </div>
+                <div class="sub-cards2 grid lg:grid-cols-4 gap-8 md:grid-cols-2 sm:grid-cols-1 mt-7 text-center font-serif mx-12">
+                <div class="card1 hover:shadow-2xl p-4 border rounded shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                    <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                    <P class="text-lg text-blue-600">18.99$</P>
+                    <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                </div>
+                <div class="card1 hover:shadow-2xl p-4 border rounded shadow ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                    <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                    <P class="text-lg text-blue-600">18.99$</P>
+                    <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                </div>
+                <div class="card1 hover:shadow-2xl p-4 border rounded shadow ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                    <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                    <P class="text-lg text-blue-600">18.99$</P>
+                    <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                </div>
+                <div class="card1 hover:shadow-2xl p-4 border rounded shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" alt="" class="w-40 h-40 object-cover mx-12">
+                    <h4 class="mt-2">CRYSTAL AGATE PHONE GRIP</h4>
+                    <P class="text-lg text-blue-600">18.99$</P>
+                    <button class="buy-btn bg-transparent text-blue-500 w-28 border mx-20 border-blue-500 py-2 rounded-xl hover:bg-blue-500 hover:text-white trasition-200 text-center mt-2">BUY NOW</button>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="view-btn text-center border border-blue-500 text-blue-500 py-2 rounded-2xl w-40 hover:bg-blue-600 hover:text-white transition duration-200">
+                    View All
+                </button>
+            </div>
+                    </div>
+
+                    <div id="about-us-section" class="details-container mt-8 flex flex-col md:flex-row relative">
+                        <!-- Gradient Background Container -->
+                        <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 -z-10 clip-path-custom"></div>
+                    
+                        <!-- Left Portion (Text Content) -->
+                        <div class="left-portion flex-1 p-4 justify-end items-end mt-9 text-right">
+                            <div>
+                                <h3 class="text-3xl font-semibold text-blue-950">BEST PRICE</h3>
+                                <h1 class="text-5xl mt-1 font-bold text-blue-950">AGATE PHONE GRIP</h1>
+                                <h1 class="text-4xl mt-1 text-red-600 font-bold "><span class="line-through font-semibold text-xl text-blue-500">44.50$</span> 19.50$</h1>
+                                <p class="mt-2 text-blue-950 font-serif text-balance">
+                                    These Pop Rock Crystal grip tops can be swapped with other tops depending on your mood, outfit, nails,
+                                    phone case, holiday, etc.! just gently squeeze the sides to remove and swap out with another color or design!
+                                </p>
+                                <button class="buy-now-btn bg-blue-500 p-4 font-serif text-white py-2 rounded-2xl text-center mt-4">
+                                    BUY NOW
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!-- Right Portion (Image Content) -->
+                        <div class="right-portion flex-1 p-4  px-4 relative">
+                            <div class=" bg-transparent h-[32rem] w-[32rem] justify-center items-center rounded-full shadow-2xl p-4 mx-10 bg-opacity-20 relative">
+                                <div class="rounded-full h-96 w-96 bg-white shadow-2xl items-center flex justify-center mx-10 my-10  inset-0">
+                                    <div class="rounded-full flex justify-center items-center p-4 bg-white h-72 w-72 shadow-2xl ">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRL2ju5zCLIg8o94jeMSjQzT6Dv0_O_m6tg&s" 
+                                             alt="Agate Phone Grip" class="bg-transparent w-48 h-auto rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+        <div class="end-container w-full bg-gradient-to-tr from-sky-950 to-sky-900 h-56 mb-2 px-4"></div>
+    </div>
+   
+   <!-- Help Section (Modal) -->
+<div id="helpModal" class="fixed inset-0 z-50 hidden bg-gray-800 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white w-4/5 md:w-1/2 p-6 rounded-lg shadow-lg relative">
+      <button class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl close-btn">&times;</button>
+      <h2 class="text-2xl font-semibold mb-4">Help & Support</h2>
+      <p class="text-gray-700 mb-4">Here you can find help or contact support.</p>
+      <ul class="list-disc ml-6 text-gray-700">
+        <li>FAQ: Frequently Asked Questions</li>
+        <li>Contact us: support@example.com</li>
+        <li>Call us: 123-456-7890</li>
+      </ul>
+    </div>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>

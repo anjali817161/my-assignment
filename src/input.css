@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clip-path-custom {
+      clip-path: polygon(40% 70%, 100% 30%, 100% 100%, 0% 100%);
+    }
+  }
+
+  @layer utilities {
+    .clip-path {
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 80%);
+    }
+  }
+  .slides img {
+    width: 100%;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.slides img {
+  width: 100%;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .nav-container ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .right-part {
+      position: static;
+      margin-top: 30px;
+  }
+
+  .home-container {
+      flex-direction: column;
+  }
+
+  .details-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
